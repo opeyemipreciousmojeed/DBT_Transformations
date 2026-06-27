@@ -1,0 +1,8 @@
+version: 2
+sources:
+    - name: raw
+      database: ANALYTICS
+      schema: RAW
+      tables:
+          - name: sales
+            description: "The raw sales data from the source system"
