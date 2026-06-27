@@ -3,4 +3,8 @@
 target/
 dbt_packages/
 logs/
+<<<<<<< HEAD
 dbt_internal_packages/
+=======
+.venv/
+>>>>>>> 74a070b9467434e9b262c516376376c58706ceb5

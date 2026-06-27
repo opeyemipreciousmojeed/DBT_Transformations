@@ -1,0 +1,32 @@
+
+version: 2
+
+models:
+    - name: stg_sales
+      description: "A staging model for sales data"
+      columns:
+          - name: order_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: customer_id
+            description: "The customer identifier"
+            tests:
+                - not_null
+          - name: order_date
+            description: "The date the order was placed"
+          - name: amount
+            description: "The order amount"
+    - name: fct_sales
+      description: "A fact model for sales data"
+      columns:
+          - name: order_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+          - name: amount
+            description: "The order amount"
+
+
